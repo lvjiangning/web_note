@@ -66,8 +66,6 @@ HTML 格式的文件是一个纯本文文件（就是用txt文件改名而成）
 
 ## HTML的历史
 
-![html中标签发展趋势](http://img.smyhvae.com/20151001_1001.png)
-
 其中，我们专门来对XHTML做一个介绍。
 
 **XHTML介绍：**
@@ -225,7 +223,7 @@ HTML4.01里面规定了**普通**和**XHTML**两大种规范。HTML觉得自己�
 
 总结一下，HTML4.01一共有6种DTD。说白了，HTML的第一行语句一共有6种情况：
 
-![](http://img.smyhvae.com/20170629_1600.png)
+![img](..\images\687474703a2f2f696d672e736d79687661652e636f6d2f32303137303632395f313630302e706e67)
 
 下面对上图中的三种小规范进行解释：
 
@@ -351,9 +349,7 @@ meta除了可以设置字符集，还可以设置关键字和页面描述。
 <meta name="Description" content="网易是中国领先的互联网技术公司，为用户提供免费邮箱、游戏、搜索引擎服务，开设新闻、娱乐、体育等30多个内容频道，及博客、视频、论坛等互动交流，网聚人的力量。" />
 ```
 
-效果如下：
 
-![](http://img.smyhvae.com/20170629_1743.png)
 
 上面的几种`<meta>`标签都不用记，但是另外还有一个`<meta>`标签是需要记住的：
 
@@ -361,7 +357,6 @@ meta除了可以设置字符集，还可以设置关键字和页面描述。
 <meta http-equiv="refresh" content="3;http://www.baidu.com">
 ```
 上面这个标签的意思是说，3秒之后，自动跳转到百度页面。
-
 
 **title 标签**:
 
@@ -375,7 +370,33 @@ title标签也是有助于SEO搜索引擎优化的。
 **base标签**：
 
 ```html
-<base href="/">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 指示所有a标签的地址前面加上此基础地址 -->
+    <!-- <base href="https://www.baidu.com/"> -->
+
+    <!-- 例子2  -->
+       <!--  在空白页签打开
+        <base target="_blank">   -->
+        <!-- 在当前页面打开页签 -->
+        <!-- <base target="_self"> -->
+    <title>Document</title>
+</head>
+
+<body link="red"  alink="green" vlink="blank"> 
+    <p id="para" class="spec">我是段落</p>
+    <!-- 相当于访问  https://www.baidu.com/天天向上-->
+    <!-- <a href="天天向上">点我 点我</a> -->
+
+      
+  <a href="天天向上">点我 点我</a>
+</body>
+
+</html>
 ```
 
 base 标签用于指定基础的路径。指定之后，所有的 a 链接都是以这个路径为基准。
@@ -394,11 +415,15 @@ base 标签用于指定基础的路径。指定之后，所有的 a 链接都是
 
 `<body>`标签另外还有一些属性，这里用个例子来解释：
 
-![](http://img.smyhvae.com/2015-10-02-cnblogs_html_39.png)
+![img](G:\Code\study_note\web_note\images\687474703a2f2f696d672e736d79687661652e636f6d2f323031352d31302d30322d636e626c6f67735f68746d6c5f33392e706e67)
+
+
 
 上方代码中，当我们对`点我点我`这几个字使用超链时，`link`属性表示默认显示的颜色、`alink`属性表示鼠标点击但是还没有松开时的颜色、`vlink`属性表示点击完成之后显示的颜色。效果如下：
 
-![](http://img.smyhvae.com/2015-10-02-cnblogs_html_05.gif)
+![img](..\images\687474703a2f2f696d672e736d79687661652e636f6d2f323031352d31302d30322d636e626c6f67735f68746d6c5f30352e676966)
+
+
 
 
 ## 计算机编码介绍
@@ -498,7 +523,7 @@ HTML只在乎标签的嵌套结构，嵌套的关系。谁嵌套了谁，谁被�
 
 百度为了追求极致的显示速度，所有HTML标签都没有换行、都没有缩进（tab），HTML和换不换行无关，标签的层次依然清晰，只不过程序员不可读了。如下图所示：
 
-![](http://img.smyhvae.com/20170629_2226.png)
+![img](..\images\687474703a2f2f696d672e736d79687661652e636f6d2f32303137303632395f323232362e706e67)
 
 #### （2）空白折叠现象
 
@@ -506,21 +531,5 @@ HTML中所有的**文字之间**，如果有空格、换行、tab都将被折叠
 
 举例如下：
 
-![](http://img.smyhvae.com/20170629_2230.jpg)
+![img](..\images\687474703a2f2f696d672e736d79687661652e636f6d2f32303137303632395f323233302e6a7067)
 
-#### （3）标签要严格封闭
-
-标签不封闭的结果是灾难性的。
-
-标签不封闭的举例如下：
-
-![](http://img.smyhvae.com/20170629_2245.jpg)
-
-
-## 我的公众号
-
-想学习**更多技能**？不妨关注我的微信公众号：**千古壹号**（id：`qianguyihao`）。
-
-扫一扫，你将发现另一个全新的世界，而这将是一场美丽的意外：
-
-![](https://img.smyhvae.com/20200102.png)

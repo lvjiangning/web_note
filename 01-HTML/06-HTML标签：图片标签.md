@@ -62,13 +62,11 @@ aaa/../bbb/1.jpg
 <img src="images/1.jpg">
 ```
 上方代码的意思是说，当前html页面有一个并列的文件夹`images`，在文件夹`images`中存放了一张图片`1.jpg`
-效果：
 
-![Paste_Image.png](http://img.smyhvae.com/20151001_19.jpg)
 
 相对路径的面试题。现有如下文件层级图：
 
-![](http://img.smyhvae.com/20170630_1133.png)
+![img](..\images\687474703a2f2f696d672e736d79687661652e636f6d2f32303137303633305f313133332e706e67) 
 
 问题：如果想在index.html中插入1.png，那么对应的img语句是？
 
@@ -143,12 +141,6 @@ width和height，在 HTML5 中的单位是 CSS 像素，在 HTML 4 中既可以�
 
 - `alt`：当图片不可用（无法显示）的时候，代替图片显示的内容。alt是英语 alternate “替代”的意思，代表替换资源。
 
-`Alt`属性效果演示：
-
-![Paste_Image.png](http://img.smyhvae.com/2015-10-01-cnblogs_html_21.png)
-
-如上图所示：当图片 src 不可用的时候，显示文字。这样做，至少能让用户知道，这个图片大概是什么内容。
-
 ### title 属性
 
 - `title`：**提示性文本**。鼠标悬停时出现的文本。
@@ -165,7 +157,7 @@ title 元素的值一般作为提示条(tooltip)呈现给用户，在光标于�
 
 效果：
 
-![Paste_Image.png](http://img.smyhvae.com/2015-10-01-cnblogs_html_20.png)
+![Paste_Image.png](..\images\687474703a2f2f696d672e736d79687661652e636f6d2f323031352d31302d30312d636e626c6f67735f68746d6c5f32302e706e67) 
 
 ### align 属性
 
@@ -177,23 +169,15 @@ title 元素的值一般作为提示条(tooltip)呈现给用户，在光标于�
 
 1、`align=""`，图片和文字低端对齐。即默认情况下的显示效果：
 
-![](http://img.smyhvae.com/2015-10-02-cnblogs_html_19.png)
-
 2、`align="center"`：图片和文字水平方向上居中对齐。显示效果：
-
-![](http://img.smyhvae.com/2015-10-02-cnblogs_html_21.png)
 
 3、`align="top"`：图片与文字顶端对齐。显示效果：
 
-![](http://img.smyhvae.com/2015-10-02-cnblogs_html_22.png)
-
 4、`align="left"`：图片在文字的左边。显示效果：
-
-![](http://img.smyhvae.com/2015-10-02-cnblogs_html_23.png)
 
 5、`align="right"`：图片在文字的右边。显示效果：
 
-![](http://img.smyhvae.com/2015-10-02-cnblogs_html_24.png)
+![image-20210808195106993](..\images\image-20210808195106993.png)
 
 
 ### 其他已废弃的属性
@@ -203,12 +187,3 @@ title 元素的值一般作为提示条(tooltip)呈现给用户，在光标于�
 - `Hspace`（已废弃）：指图片左右的边距。
 - `Vspace`（已废弃）：指图片上下的边距。
 
-最后，送上妹子的近照一张。楼主已经仁至义尽了：http://img.smyhvae.com/2015-10-01-cnblogs_html_20150219214912_11994.jpg
-
-## 我的公众号
-
-想学习**更多技能**？不妨关注我的微信公众号：**千古壹号**（id：`qianguyihao`）。
-
-扫一扫，你将发现另一个全新的世界，而这将是一场美丽的意外：
-
-![](https://img.smyhvae.com/20200102.png)

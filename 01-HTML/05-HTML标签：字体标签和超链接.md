@@ -29,20 +29,25 @@ publish: true
 
 比如说，你想把`<p>`作为一个文本在页面上显示，直接写`<p>`是肯定不行的，因为这代表的是一个段落标签，所以这里需要用到**转义字符**。应该这么写：
 ```html
-这是一个HTML语言的&lt;p&gt;标签
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+    这是一个HTML语言的&lt;p&gt;标签
+</body>
+</html>
 ```
-正确的效果如下：
+![image-20210808180556790](..\images\image-20210808180556790.png) 
 
-![Paste_Image.png](http://img.smyhvae.com/2015-10-01-cnblogs_html_11.png)
 
-错误的效果如下：
 
-![Paste_Image.png](http://img.smyhvae.com/2015-10-01-cnblogs_html_12.png)
+
 
 其实我们只要记住前三个符号就行了，其他的在需要的时候查一下就行了。而且，EditPlus软件中是可以直接点击这些符号进行选择的：
-
-![Paste_Image.png](
-http://img.smyhvae.com/2015-10-01-cnblogs_html_13.png)
 
 来一张表格，方便需要的时候查询：
 
@@ -72,11 +77,11 @@ http://img.smyhvae.com/2015-10-01-cnblogs_html_13.png)
 
 效果：
 
-![Paste_Image.png](http://img.smyhvae.com/2015-10-01-cnblogs_html_15.png)
+![Paste_Image.png](..\images\687474703a2f2f696d672e736d79687661652e636f6d2f323031352d31302d30312d636e626c6f67735f68746d6c5f31352e706e67) 
 
 上面的这几个标签，常用于做一些小装饰、小图标。比如：
 
-![](http://img.smyhvae.com/20180118_2340.png)
+![img](..\images\687474703a2f2f696d672e736d79687661652e636f6d2f32303138303131385f323334302e706e67) 
 
 这张图中，我们通过查看京东网站的代码发现，箭头处的小图标都是用的标签`<i>`。
 
@@ -84,13 +89,7 @@ http://img.smyhvae.com/2015-10-01-cnblogs_html_13.png)
 
 ### 粗体标签`<b>`或`<strong>`（已废弃）
 
-效果：
-
-![Paste_Image.png](http://img.smyhvae.com/2015-10-01-cnblogs_html_14.png)
-
-
-
-
+![image-20210808181045896](..\images\image-20210808181045896.png) 
 
 ### 字体标签`<font>`（已废弃）
 
@@ -109,9 +108,7 @@ http://img.smyhvae.com/2015-10-01-cnblogs_html_13.png)
 <font face="微软雅黑" color="#FF0000" size="10">vae</font>
 ```
 
-效果：
-
-![Paste_Image.png](http://img.smyhvae.com/2015-10-01-cnblogs_html_10.png)
+![image-20210808181155692](..\images\image-20210808181155692.png) 
 
 
 
@@ -127,7 +124,7 @@ O<sup>2</sup>    5<sub>3</sub>
 ```
 效果：
 
-![Paste_Image.png](http://img.smyhvae.com/2015-10-01-cnblogs_html_16.png)
+![image-20210808181242503](..\images\image-20210808181242503.png) 
 
 ## 三、超链接
 
@@ -146,7 +143,7 @@ href（hypertext reference）：超文本地址。读作“喝瑞夫”，不要
 
 效果：
 
-![Paste_Image.png](http://img.smyhvae.com/2015-10-01-cnblogs_html_17.png)
+![Paste_Image.png](..\images\687474703a2f2f696d672e736d79687661652e636f6d2f323031352d31302d30312d636e626c6f67735f68746d6c5f31372e706e67) 
 
 当然，我们也可以直接点进链接，访问一个网址。代码举例如下：
 
@@ -160,14 +157,38 @@ href（hypertext reference）：超文本地址。读作“喝瑞夫”，不要
 
 首先我们要创建一个**锚点**，也就是说，使用`name`属性或者`id`属性给那个特定的位置起个名字。效果如下：
 
-![Paste_Image.png](http://img.smyhvae.com/2015-10-01-cnblogs_html_18.png)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <style>
+        .div1{
+            height: 1400px;
+            width: 100%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="div1" >
+        <a id="start">start</a>
+    </div> 
+    <div class="div2"  >
+        <a id="end" href="#start">end</a>
+    </div>
+</body>
+</html>
+```
 
 上图中解释：
 
 第11行代码表示，顶部这个锚的名字叫做name1。
 然后在底部设置超链接，点击时将回到顶部（此时，网页中的url的末尾也出现了`#name1`）。注意**上图中红框部分的`#`号不要忘记了**，表示跳到名为name1的特定位置，这是规定。如果少了`#`号，点击之后，就会跳到name1这个文件或者name1这个文件夹中去。
 
-如果我们将上图中的第28行代码写成：
+如果我们将上图中的代码写成：
 
 ```html
 <a href="a.html#name1">回到顶部</a>
@@ -204,10 +225,6 @@ href（hypertext reference）：超文本地址。读作“喝瑞夫”，不要
 ```html
 <a href="09_img.html" title="很好看哦">结婚照</a>
 ```
-
-效果如下：
-
-![](http://img.smyhvae.com/20170630_1415.png)
 
 `target`属性举例：
 
