@@ -237,7 +237,7 @@ CSS Tools: Reset CSS。链接：<https://meyerweb.com/eric/tools/css/reset/>
 
 - 图片 img
 
-- br、hr
+- br、hr :hr 表示水平分割线，br 空白一行
 
 - meta、link
 

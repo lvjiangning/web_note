@@ -222,17 +222,17 @@ PS:所有用`#`开头的值，都是16进制的。
 
 （1）不加这个属性时：（即默认时）（背景图片会被平铺满）
 
-![](http://img.smyhvae.com/2015-10-03-css-19.png)
+![](..\images\2015-10-03-css-19.png) 
 
 PS：padding的区域也是有背景图的。
 
 （2）属性值为`no-repeat`（不要平铺）时：
 
-![](http://img.smyhvae.com/2015-10-03-css-20.png)
+![](..\images\2015-10-03-css-20.png) 
 
 （3）属性值为`repeat-x`（横向平铺）时：
 
-![](http://img.smyhvae.com/2015-10-03-css-21.png)
+![](..\images\2015-10-03-css-21.png) 
 
 其实这种属性的作用还是很广的。举个例子，设计师设计一张宽度只有1px、颜色纵向渐变的图片，然后我们通过这个属性将其进行水平方向的平铺，就可以看到整个页面都是渐变的了。
 
@@ -240,7 +240,7 @@ PS：padding的区域也是有背景图的。
 
 （4）属性值为`repeat-y`（纵向平铺）时：
 
-![](http://img.smyhvae.com/2015-10-03-css-22.png)
+![](..\images\2015-10-03-css-22.png) 
 
 ## `background-position`属性
 
@@ -260,10 +260,10 @@ PS：padding的区域也是有背景图的。
 
 举例如下：
 
-![](http://img.smyhvae.com/20170812_1643.png)
+![](..\images\20170812_1643.png) 
 
 
-![](http://img.smyhvae.com/20170812_1645.png)
+![](..\images\20170812_1645.png)  
 
 **2、用单词描述属性值：**
 
@@ -286,11 +286,11 @@ PS：padding的区域也是有背景图的。
 
 打开“暗黑3 台湾”的官网<https://tw.battle.net/d3/zh/>，可以看到官网的效果是比较炫的：
 
-![](http://img.smyhvae.com/20170812_1945.jpg)
+![](..\images\20170812_1945.jpg) 
 
 检查网页后，找到网站背景图片的url：<https://tw.battle.net/d3/static/images/layout/bg-repeat.jpg>。背景图如下：
 
-![](http://img.smyhvae.com/20170812_1950.jpg)
+![](..\images\20170812_1950.jpg) 
 
 实际上，我们是通过把这张图片作为网站的背景图来达到显示效果的。只需要给body标签加如下属性即可：
 
@@ -308,7 +308,7 @@ PS：padding的区域也是有背景图的。
 
 很多网站的首页都会有banner图（网站最上方的全屏大图叫做「**通栏banner**」），这种图要求横向的宽度特别大。比如说，设计师给你一张1920*465的超大banner图，如果我们把这个banner图作为img标签直接插入网页中，会有问题的：首先，图片不在网页的中间；其次，肯定会出现横向滚动条。如下图所示：
 
-![](http://img.smyhvae.com/20170813_1102.gif)
+![](..\images\20170813_1102.gif) 
 
 正确的做法是，将banner图作为div的背景图，这样的话，背景图超出div的部分，会自动移溢出。需要给div设置的属性如下：
 
@@ -323,7 +323,7 @@ PS：padding的区域也是有背景图的。
 
 上方代码中，我们给div设置height（高度为banner图的高度），不需要设置宽度（因为宽度会自动霸占整行）。效果如下：
 
-![](http://img.smyhvae.com/20170813_1119.gif)
+![](..\images\20170813_1119.gif) 
 
 上图可以看出，将banner图作为div的背景后，banner图会永远处于网页的正中间（水平方向来看）。
 
@@ -335,7 +335,7 @@ PS：padding的区域也是有背景图的。
 
 `background-attachment:fixed;`的效果如下：
 
-![](http://img.smyhvae.com/20170813_1158.gif)
+![](..\images\20170813_1158.gif) 
 
 ### background 综合属性
 
@@ -369,7 +369,7 @@ background属性和border一样，是一个综合属性，可以将多个属性�
 
 效果如下：
 
-![](http://img.smyhvae.com/20170813_1515.png)
+![](..\images\20170813_1515.png) 
 
 ## `background-size`属性：背景尺寸
 
@@ -444,11 +444,11 @@ background属性和border一样，是一个综合属性，可以将多个属性�
 
 效果如下：
 
-![](http://img.smyhvae.com/20191006_1350.png)
+![](..\images\20191006_1350.png) 
 
 在上方代码的基础之上，再加一个 `background-position: center`属性之后，图片就会在容器里**居中显示**：
 
-![](http://img.smyhvae.com/20191006_1520.png)
+![](..\images\20191006_1520.png) 
 
 ## 背景原点：`background-origin` 属性
 
@@ -473,7 +473,9 @@ background属性和border一样，是一个综合属性，可以将多个属性�
 
 如下图所示：
 
-![](http://img.smyhvae.com/20180207_2115.png)
+![](..\images\20180207_2115.png) 
+
+
 
 ## `background-clip`属性：设置元素的背景（背景图片或颜色）是否延伸到边框下面
 
@@ -531,7 +533,7 @@ background属性和border一样，是一个综合属性，可以将多个属性�
 
 实现效果如下：
 
-![](http://img.smyhvae.com/20180207_2140.gif)
+![](..\images\20180207_2140.gif) 
 
 上方代码中，我们其实给盒子设置了五张小图，拼成的一张大图。当改变浏览器窗口大小时，可以自适应布局。
 
@@ -657,7 +659,7 @@ background属性和border一样，是一个综合属性，可以将多个属性�
 
 效果如下：
 
-![](http://img.smyhvae.com/20180207_2222.png)
+![](..\images\20180207_2222.png) 
 
 **举例**：按钮
 
@@ -721,7 +723,7 @@ background属性和border一样，是一个综合属性，可以将多个属性�
 
 效果：
 
-![](http://img.smyhvae.com/20180207_2301.png)
+![](..\images\20180207_2301.png) 
 
 ### 径向渐变
 
@@ -803,7 +805,7 @@ background属性和border一样，是一个综合属性，可以将多个属性�
 
 效果如下：
 
-![](http://img.smyhvae.com/20180207_2256.png)
+![](..\images\20180207_2256.png) 
 
 **举例：**利用径向渐变和边框圆角的属性，生成按钮。代码如下：
 
@@ -820,6 +822,7 @@ background属性和border一样，是一个综合属性，可以将多个属性�
             width: 200px;
             height: 200px;
             margin: 40px auto;
+            
             border-radius: 100px;
             background-color: yellowgreen;
         }
@@ -847,7 +850,7 @@ background属性和border一样，是一个综合属性，可以将多个属性�
 
 效果如下：
 
-![](http://img.smyhvae.com/20180208_1133.png)
+![](..\images\20180208_1133.png) 
 
 上图中，给第二个div设置的透明度是从0到0.5。如果设置的透明度是从0到0，则样式无变化，和第一个div一样。如果设置的透明度是从1到1，则盒子是全黑的。
 
@@ -881,7 +884,7 @@ background属性和border一样，是一个综合属性，可以将多个属性�
 
 `clip-path: polygon()`举例：
 
-![](http://img.smyhvae.com/20191006_1430.png)
+![](..\images\20191006_1430.png) 
 
 另外，通过 `clip-path: (svg)` 可以导入svg矢量图，实现 iOS图标的圆角。这里就不详细展开了。
 

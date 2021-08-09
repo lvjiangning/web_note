@@ -16,7 +16,7 @@ publish: true
 ## CSS的单位
 
 html中的单位只有一种，那就是像素px，所以单位是可以省略的，但是在CSS中不一样。
-<font color="#0000FF">**CSS中的单位是必须要写的**，因为它没有默认单位。</font>
+<font color="red">**CSS中的单位是必须要写的**，因为它没有默认单位。</font>
 
 ### 绝对单位
 
@@ -40,7 +40,9 @@ html中的单位只有一种，那就是像素px，所以单位是可以省略�
 
 百分比`%`这个相对单位要怎么用呢？这里也举个例子：
 
-![](http://img.smyhvae.com/2015-10-03-css-17.png)
+![](..\images\2015-10-03-css-17.png) 
+
+
 
 ## font 字体属性
 
@@ -67,7 +69,7 @@ CSS中，所有的行，都有行高。盒子模型的padding，绝对不是直�
 
 如下图所示：
 
-![](http://img.smyhvae.com/20170808_2216.png)
+![](..\images\20170808_2216.png) 
 
 上图中，我们设置行高为30px，30px * 5 = 150px，通过查看审查元素，这个p标签的高度果然为150px。而且我们发现，我们并没有给这个p标签设置高度，显然是内容将其撑高的。
 
@@ -226,12 +228,14 @@ CSS样式中，常见的文本属性有以下几种：
 - `text-decoration: none;` 字体修饰：none 去掉下划线、**underline 下划线**、line-through 中划线、overline 上划线
 - `text-transform: lowercase;`  单词字体大小写。uppercase大写、lowercase小写
 - `color:red;` 字体颜色
-- `text-align: center;` 在当前容器中的对齐方式。属性值可以是：left、right、center（<font color="#0000FF">**在当前容器的中间**</font>）、justify
+- `text-align: center;` 在当前容器中的对齐方式。属性值可以是：left、right、center（<font color="red">**在当前容器的中间**</font>）、justify
 - `text-transform: lowercase;` 单词的字体大小写。属性值可以是：`uppercase`（单词大写）、`lowercase`（单词小写）、`capitalize`（每个单词的首字母大写）
 
 这里来一张表格的图片吧，一览无遗：
 
-![](http://img.smyhvae.com/2015-10-03-css-18.png)
+![](..\images\2015-10-03-css-18.png) 
+
+
 
 ## 列表属性
 
@@ -246,15 +250,15 @@ ul li{
 
 我们来看一下`list-style-image`属性的效果：
 
-![](http://img.smyhvae.com/2015-10-03-css-23.png)
+![](..\images\2015-10-03-css-23.png) 
 
 给列表前面的图片加个边距吧，不然显示不完整：
 
-![](http://img.smyhvae.com/2015-10-03-css-24_2.png)
+![](..\images\2015-10-03-css-24_2.png) 
 
 这里来一张表格的图片吧，一览无遗：
 
-![](http://img.smyhvae.com/2015-10-03-css-26.png)
+![](..\images\2015-10-03-css-26.png) 
 
 ## overflow属性：超出范围的内容要怎么处理
 
@@ -316,7 +320,7 @@ ul li{
 
 效果：
 
-![](http://img.smyhvae.com/2015-10-03-css-31.png)
+![](..\images\2015-10-03-css-31.png) 
 
 ## 鼠标的属性 cursor
 
@@ -379,14 +383,14 @@ p:hover{
  </body>
 ```
 
-效果如下：（IE有效果，google浏览器无效果）
+效果如下：（IE(ie11下无效)有效果，google浏览器无效果）
 
-![](http://img.smyhvae.com/2015-10-03-css-36.png)
+![](..\images\2015-10-03-css-36.png) 
 
 **延伸：**
 滤镜本身是平面设计中的知识。如果你懂一点PS的话···打开PS看看吧：
 
-![](http://img.smyhvae.com/2015-10-03-css-38.png)
+![](..\images\2015-10-03-css-38.png) 
 
 爆料一下，表示博主有两年多的平面设计经验，我做设计的时间其实比写代码的时间要长，嘿嘿···
 

@@ -19,7 +19,7 @@ publish: true
 ## 拖拽
 
 
-![](http://img.smyhvae.com/20180223_2130.gif)
+![](..\images\20180223_2130.gif) 
 
 如上图所示，我们可以拖拽博客园网站里的图片和超链接。
 
@@ -56,7 +56,7 @@ publish: true
 
 效果如下：
 
-![](http://img.smyhvae.com/20180223_2140.gif)
+![](..\images\20180223_2140.gif) 
 
 上图中，我们给 box1 增加了`draggable="true"` 属性之后，发现 box1 是可以拖拽的。但是拖拽之后要做什么事情呢？这就涉及到**事件监听**。
 
@@ -124,11 +124,11 @@ publish: true
 
 效果如下：
 
-![](http://img.smyhvae.com/20180223_2201.gif)
+![](..\images\20180223_2201.gif) 
 
 打印结果：
 
-![](http://img.smyhvae.com/20180223_2213.png)
+![](..\images\20180223_2213.png) 
 
 
 ### 2、目标元素
@@ -215,11 +215,11 @@ publish: true
 
 效果演示：
 
-![](http://img.smyhvae.com/20180223_2240.gif)
+![](..\images\20180223_2240.gif) 
 
 注意，上方代码中，我们加了`event.preventDefault()`这个方法。如果没有这个方法，后面ondrop()方法无法触发。如下图所示：
 
-![](http://img.smyhvae.com/20180223_2245.gif)
+![](..\images\20180223_2245.gif) 
 
 如上图所示，连光标的形状都提示我们，无法在目标元素里继续操作了。
 
