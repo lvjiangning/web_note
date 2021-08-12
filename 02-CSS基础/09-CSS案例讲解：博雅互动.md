@@ -453,7 +453,7 @@ publish: true
 
 我们在“点击播放”的右侧放了一个三角形。这个很有技巧。
 
-![](http://img.smyhvae.com/20180115_1356.png)
+![](..\images\20180115_1356.png) 
 
 代码截取如下：
 
@@ -471,7 +471,7 @@ publish: true
 
 （2）导航栏+banner+内容区域的效果如下：
 
-![](http://img.smyhvae.com/20180114_1405.png)
+![](..\images\20180114_1405.png) 
 
 工程文件如下：
 
