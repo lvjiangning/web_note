@@ -78,7 +78,7 @@ woff字体是Web字体中最佳格式，他是一个开放的TrueType/OpenType�
 
 上图中， 我们把箭头处的html文件打开，里面告诉了我们 webfont 的**使用步骤**：
 
-![](http://img.smyhvae.com/20180220_1338.png)
+![](..\images\20180220_1338.png) 
 
 （1）第一步：使用font-face声明字体
 
@@ -178,11 +178,11 @@ woff字体是Web字体中最佳格式，他是一个开放的TrueType/OpenType�
 
 打开网站<http://iconfont.cn/>，找到想要的图标，加入购物车。然后下载下来：
 
-![](http://img.smyhvae.com/20180220_1750.png)
+![](..\images\20180220_1750.png) 
 
 压缩包下载之后，解压，打开里面的demo.html，里面告诉了我们怎样引用这些图标。
 
-![](http://img.smyhvae.com/20180220_1755.png)
+![](..\images\20180220_1755.png) 
 
 **举例1**：（图标字体引用）
 
@@ -230,7 +230,7 @@ woff字体是Web字体中最佳格式，他是一个开放的TrueType/OpenType�
 
 效果如下：
 
-![](http://img.smyhvae.com/20180220_1800.png)
+![](..\images\20180220_1800.png) 
 
 
 **举例2**：（伪元素的方式使用图标字体）
@@ -296,7 +296,7 @@ woff字体是Web字体中最佳格式，他是一个开放的TrueType/OpenType�
 
 效果如下：
 
-![](http://img.smyhvae.com/20180220_1815.png)
+![](..\images\20180220_1815.png) 
 
 
 工程文件：

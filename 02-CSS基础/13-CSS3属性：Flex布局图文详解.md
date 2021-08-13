@@ -56,7 +56,7 @@ flex 唯一的缺点就在于，它不支持低版本的 IE 浏览器。
 
 在此，我们引入主轴和侧轴的概念。
 
-![](http://img.smyhvae.com/20191009_1701.png)
+![](..\images\20191009_1701.png) 
 
 如上图所示：
 
@@ -625,7 +625,6 @@ PS：主轴和侧轴并不是固定不变的，可以通过 `flex-direction` 更
 - [后盾人 flex 教程](http://houdunren.gitee.io/note/css/10%20%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80.html)
 
 ## 技巧：使用 margin 自动撑满剩余空间
-
 
 
 
